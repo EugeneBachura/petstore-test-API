@@ -39,10 +39,10 @@ To set up the application:
     ```
 
 5. **Storage Link for Images**
-   Since the application stores images locally, create a symbolic link to the public storage directory:
-   `bash
-    php artisan storage:link
-    `
+    - Since the application stores images locally, create a symbolic link to the public storage directory:
+    ```bash
+     php artisan storage:link
+    ```
 
 ## Usage
 
