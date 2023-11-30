@@ -27,21 +27,25 @@ To set up the application:
     ```
 
 3. **Environment Setup**
+
     - Copy `.env.example` to `.env` and configure your database and other settings.
     - Generate an application key:
         ```bash
         php artisan key:generate
         ```
-4. **Start the Local Server**
+
+4. **Storage Link for Images**
+
+    - Since the application stores images locally, create a symbolic link to the public storage directory:
+
+    ```bash
+    php artisan storage:link
+    ```
+
+5. **Start the Local Server**
 
     ```bash
     php artisan serve
-    ```
-
-5. **Storage Link for Images**
-    - Since the application stores images locally, create a symbolic link to the public storage directory:
-    ```bash
-     php artisan storage:link
     ```
 
 ## Usage
